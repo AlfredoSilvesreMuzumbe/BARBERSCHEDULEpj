@@ -1,0 +1,143 @@
+@charset "UTF-8";
+section#corp {
+    background: url("../imagens/icone01.png");
+}
+
+ul#album-fotos {
+    width: 700px;
+    margin: 0 auto;
+    padding: 60px;
+    overflow: hidden;
+    list-style: none;            
+}
+ul#album-fotos li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,.4);
+    box-shadow: 2px 2px 4px rgba(0,0,0,.4);
+    -webkit-transition: all .5s  ease-in;
+}
+ul#album-fotos li:hover {
+    -webkit-transform: scale(1.5);
+}
+ul#album-fotos li#ft1 {
+    background: url('../imagens/ft1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #00000000;
+}
+ul#album-fotos li#ft1:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;}
+
+ul#album-fotos li#ft2 {
+    background: url('../imagens/ft2.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #00000000;
+}
+ul#album-fotos li#ft2:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;}
+
+    ul#album-fotos li#ft3 {
+    background: url('../imagens/ft3.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #00000000;
+}
+ul#album-fotos li#ft3:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;}
+
+ul#album-fotos li#ft4 {
+    background: url('../imagens/ft4.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #00000000;
+}
+ul#album-fotos li#ft4:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;}
+
+ul#album-fotos li#ft5 {
+    background: url('../imagens/ft5.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #00000000;
+}
+ul#album-fotos li#ft5:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;}
+
+ul#album-fotos li#ft6 {
+    background: url('../imagens/ft6.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #00000000;
+}
+ul#album-fotos li#ft6:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;}
+
+ul#album-fotos li#ft7 {
+    background: url('../imagens/ft7.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #00000000;
+}
+ul#album-fotos li#ft7:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;}
+
+ul#album-fotos li#ft8 {
+    background: url('../imagens/ft8.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #00000000;
+}
+ul#album-fotos li#ft8:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;}
+ul#album-fotos li#ft9 {
+    background: url('../imagens/ft9.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #00000000;
+}
+ul#album-fotos li#ft9:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;}
+
+ul#album-fotos li#ft10 {
+    background: url('../imagens/ft10.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #00000000;
+}
+ul#album-fotos li#ft10:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;} 
+
+ul#album-fotos li#ft11 {
+    background: url('../imagens/ft11.jpg') no-repeat;
+    background-position: 70% 70%;
+    background-size: 400px 400px;
+    background-color: #00000000;
+}
+ul#album-fotos li#ft11:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;}
+
+ul#album-fotos li#ft12 {
+    background: url('../imagens/ft12.jpg') no-repeat;
+    background-position: 70% 70%;
+    background-size: 500px 500px;
+    background-color: #00000000;
+}
+ul#album-fotos li#ft12:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;}

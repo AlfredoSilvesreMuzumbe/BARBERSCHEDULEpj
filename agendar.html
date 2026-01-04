@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberSchedule</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/agendar.css">
+</head>
+<body>
+    <div id="interface">
+      <header id="cabecalho">    
+        <hgroup>
+        <h1>Barber Schedule</h1>
+        <h2>A melhor barbearia do pais!</h2>
+      </hgroup>
+      <img id="icone" src="imagens/barberlogo.png" alt="logo da barbearia">
+      <nav id="menu"><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="fotos.html">fotos</a></li>
+      <li><a href="agendar.html">agenfar</a></li>
+      <li><a href="fale-conosco.html">fale conosco</a></li>
+      </ul>
+      </nav>
+      </header>
+<main class="container">
+    <section class="agende">
+        <h2>Agendamento Online</h2>
+
+        <form id="form" class="formulario">
+
+            <fieldset>
+                <legend>Dados do Cliente</legend>
+
+                <label>
+                  Nome Completo
+                  <input type="text" id="nome"></label>
+
+                <label>
+                    Telefone
+                    <input type="tel" id="telefone" placeholder="+258...">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Serviço</legend>
+
+                <label>
+                    Tipo de Serviço
+                    <select id="servico">
+                        <option value="">Selecione</option>
+                        <option>Corte de Cabelo</option>
+                        <option>Corte & Barba</option>
+                        <option>Tratamento Capilar</option>
+                        <option>Facial</option>
+                    </select>
+                </label>
+
+                <label>
+                    Profissional
+                    <select id="profissional">
+                        <option>Qualquer</option>
+                        <option>Barbeiro João</option>
+                        <option>Barbeiro Carlos</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Data e Hora</legend>
+
+                <label>
+                    Data
+                    <input type="date" id="data">
+                </label>
+
+                <label>
+                    Hora
+                    <input type="time" id="hora">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Observações</legend>
+                <textarea id="obs" rows="3"></textarea>
+            </fieldset>
+
+            <button type="submit">Confirmar</button>
+
+            <p id="mensagem"></p>
+        </form>
+    </section>
+</main>
+    <footer id="rodape">
+      <P>Copyright 2025 - by Afredo Muzumbe <br/> 
+<a href="http://facebook.com/BarberSchedule">Facebook</a> | 
+<a href="http://twitter.com/BarberSchedule">Twitter</a></P>
+    </footer>
+    <script src="script.js">
+      const form = document.getElementById("Form");
+const mensagem = document.getElementById("mensagem");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nome = document.getElementById("nome").value.trim();
+    const telefone = document.getElementById("telefone").value.trim();
+    const servico = document.getElementById("servico").value;
+    const data = document.getElementById("data").value;
+    const hora = document.getElementById("hora").value;
+
+    if (!nome || !telefone || !servico || !data || !hora) {
+        mensagem.textContent = "Preencha todos os campos obrigatórios.";
+        mensagem.className = "erro";
+        return;
+    }
+
+    const hoje = new Date().toISOString().split("T")[0];
+    if (data < hoje) {
+        mensagem.textContent = "A data deve ser igual ou posterior a hoje.";
+        mensagem.className = "erro";
+        return;
+    }
+
+    mensagem.innerHTML = `
+        Agendamento confirmado!<br>
+        <strong>${nome}</strong><br>
+        Serviço: ${servico}<br>
+        Data: ${data} às ${hora}
+    `;
+    mensagem.className = "sucesso";
+
+    form.reset();
+});
+    </script>
+    
+</div>  
+</body>
+</html>

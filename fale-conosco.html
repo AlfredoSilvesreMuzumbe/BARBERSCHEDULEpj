@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberSchedule</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/fale.css">
+</head>
+<body>
+    <div id="interface">
+      <header id="cabecalho">    
+        <hgroup>
+        <h1>Barber Schedule</h1>
+        <h2>A melhor barbearia do pais!</h2>
+      </hgroup>
+      <img id="icone" src="imagens/barberlogo.png" alt="logo da barbearia">
+      <nav id="menu"><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="fotos.html">fotos</a></li>
+      <li><a href="agendar.html">agenfar</a></li>
+      <li><a href="fale-conosco.html">fale conosco</a></li>
+      </ul>
+      </nav>
+      </header>
+      <section id="corpo-full">
+
+<article id="noticiaPrincipal">
+     <header id="cabecalhoartigo">
+ <hgroup>
+  <h3>fale conosco > contacto</h3>
+  </hgroup>
+  </header>
+
+<form method="post" id="fContacto" action="mailto:contacto@cursoemvideo.com" oninput="calc_total();">
+  <fieldset id="usuario"><legend>Identificação do Cliente</legend>
+    <p><label for="cNome">Nome:</label> 
+        <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+    <p><label for="cSenha">Senha:</label>
+         <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 Digitos"/></p>
+    <p><label for="cMail">E-mail:</label> 
+        <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="********@gmail.com"  /> </p>
+    <fieldset id="sexo"> <legend>Sexo</legend>
+        <input type="radio" name="tSexo" id="cMac" /><label for="cMac">Masculino</label> <br/>
+        <input type="radio" name="tSexo" id="cFem" /><label for="cFem">Feminino</label>
+    </fieldset>
+    <p><label for="cNasc">Data de Nascimento:</label> <input type="date" name="tNasc" id="cNasc" /></p>
+  </fieldset>
+
+  <fieldset id="endereco"><legend>Endereço do Cliente</legend>
+    <p><label for="cRua">Logradouro:</label>
+        <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua,Q,C, AV,"/></p>
+    <p><label for="cNum">Número:</label>
+         <input type="number" name="tNum" id="cNum" min="0" max="99999"/></p>
+    <p><label for="cEst">provincia:</label>
+    <select for="tEst" id="cEst">
+       <optgroup label="Regiao sul">
+           <option value="MP" selected> Maputo</option>
+           <option value="GZ"> Gaza</option>
+           <option value="In"> Inhambane</option>
+        </optgroup> 
+          <optgroup label="Regiao centro"> <option value="SF" >Sofala</option>
+          <option value="MN"> Manica</option>
+          <option value="TT"> Tete</option>
+          <option value="ZZ"> Zambezia</option>
+        </optgroup> 
+        <optgroup label="Regiao Norte">
+           <option value="NP" >Nampula</option>
+           <option value="NI"> Niassa</option>
+           <option value="CD"> Cabo Delgado</option>
+        </optgroup>
+    </select>      
+    </p>
+    <p><label for="cCid">Cidade:</label>
+       <input type="text" name="tC id" id="cCid" size="20" maxlength="40" placeholder="Sua cidade" list="cidades"></p>
+       <datalist id="cidades">
+        <option value="Maputo cidade"></option>
+        <option value="Matola"></option>
+       </datalist>
+  </fieldset>  
+
+  <fieldset id="mensagem"><legend>Mensagem do Cliente</legend>
+    <p><label for="cUrg">Grau de Urgência:</label>
+    min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>max</p>
+    <p><label for="cMsg">Mensagem:</label>
+    <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui a sua mensagem" ></textarea></p>
+  </fieldset> 
+
+<input type="image" name="tEnviar" src="imagens/botao-enviar.png">
+</form>
+</article>
+</section>
+    <header>    
+    </header>
+    <footer id="rodape">
+      <P>Copyright 2025 - by Afredo Muzumbe <br/> 
+<a href="http://facebook.com/BarberSchedule">Facebook</a> | 
+<a href="http://twitter.com/BarberSchedule">Twitter</a></P>
+    </footer>
+    
+</div>  
+</body>
+</html>
